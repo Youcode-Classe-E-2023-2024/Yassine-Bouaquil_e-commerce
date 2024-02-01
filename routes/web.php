@@ -14,8 +14,8 @@ use App\Http\Controllers\ProductController;
 */
 
 Route::get('/Product',[ProductController::class,'liste_product']);
-Route::get('/ajouter',[ProductController::class,'Ajouter_product']);
-Route::post('/ajouter/traitement',[ProductController::class,'Ajouter_product_traitement']);
+Route::get('/ajouter',[ProductController::class,'ajouter_product']);
+Route::post('/ajouter/traitement',[ProductController::class,'ajouter_product_traitement']);
 
 
 

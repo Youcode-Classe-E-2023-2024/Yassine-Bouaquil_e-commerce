@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->string('prix');
-            $table->text('description');
+            $table->string('description');
             $table->timestamps();
         });
     }

@@ -27,7 +27,7 @@
             </ul>
 
 
-            <form action="/ajouter/traitement" method="POST">
+            <form action="/ajouter/traitement" method="POST" class="form-group">
                 @csrf
                 <div class="mb-3">
                     <label for="Nom" class="form-label">Nom de produit</label>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="Description" class="form-label">Description</label>
-                    <textarea type="text" class="form-control" id="Description" name="Description"></textarea>
+                    <textarea type="text" class="form-control" id="description" name="description"></textarea>
                 </div>
 
                 <button type="submit" class="btn btn-primary">Ajouter</button>
