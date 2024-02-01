@@ -18,7 +18,8 @@ Route::get('/ajouter',[ProductController::class,'ajouter_product']);
 Route::post('/ajouter/traitement',[ProductController::class,'ajouter_product_traitement']);
 Route::get('/update-product/{product}' ,[ProductController::class,'update_product']);
 Route::get('/delete-product/{product}' ,[ProductController::class,'delete_product']);
-
 Route::put('/update/traitement/{product}',[ProductController::class,'update_product_traitement'])->name('product.update');
 Route::put('/delete/traitement/{product}',[ProductController::class,'delete_product_traitement'])->name('product.update');
 
+
+Route::get('/product/{id}' ,[ProductController::class,'show']);

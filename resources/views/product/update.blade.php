@@ -41,7 +41,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="Description" class="form-label">Description</label>
-                    <textarea type="text" class="form-control" id="description" name="description" value="{{ $product->description }}"></textarea>
+                    <input type="text" class="form-control" id="description" name="description" value="{{ $product->description }}"></input>
                 </div>
 
                 <button type="submit" class="btn btn-primary">modifier</button>

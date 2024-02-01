@@ -47,7 +47,7 @@
                         <td>{{ $products ->prix }}</td>
                         <td>{{ $products ->description }}</td>
                         <td>
-                            <a href="/delete-product/{{ $products->id }}" class="btn btn-danger">Afficher les details</a>
+                            <a href="/product/{{ $products->id }}" class="btn btn-danger">Afficher les details</a>
                             <a href="/update-product/{{ $products->id }}" class="btn btn-primary">Modifier</a>
                             <a href="/delete-product/{{ $products->id }}" class="btn btn-danger">Supprimer</a>
                         </td>
