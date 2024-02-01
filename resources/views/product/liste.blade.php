@@ -24,26 +24,26 @@
                     <th>Description</th>
                     <th>Actions</th>
                 </tr>
-
                 </thead>
                 <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Telephone</td>
-                    <td>100 DH</td>
-                    <td>Nice product</td>
-                    <td>
-                        <a href="#" class="btn btn-primary">Modifier</a>
-                        <a href="#" class="btn btn-danger">Supprimer</a>
-
-                    </td>
-                </tr>
+                @foreach($product as $products)
+                    <tr>
+                        <td>{{ $products ->id }}</td>
+                        <td>{{ $products->nom }}</td>
+                        <td>{{ $products ->prix }}</td>
+                        <td>{{ $products ->description }}</td>
+                        <td>
+                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="#" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
+                @endforeach
                 </tbody>
-
             </table>
         </div>
     </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

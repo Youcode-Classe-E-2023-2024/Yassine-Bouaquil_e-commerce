@@ -9,7 +9,8 @@ class ProductController extends Controller
 {
     public function liste_product()
     {
-        return view('product.liste');
+        $product = Product::all();
+        return view('product.liste',compact('product'));
     }
 
     public function ajouter_product()
