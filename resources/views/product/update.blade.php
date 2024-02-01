@@ -48,7 +48,7 @@
             </form>
 
             <hr>
-            <a href="/Product" class="btn btn-danger">Revenir a la liste des Produits</a>
+            <a href="/" class="btn btn-danger">Revenir a la liste des Produits</a>
 
         </div>
     </div>

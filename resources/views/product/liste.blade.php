@@ -42,7 +42,7 @@
                         <td>{{ $products ->description }}</td>
                         <td>
                             <a href="/update-product/{{ $products->id }}" class="btn btn-primary">Modifier</a>
-                            <a href="#" class="btn btn-danger">Supprimer</a>
+                            <a href="/delete-product/{{ $products->id }}" class="btn btn-danger">Supprimer</a>
                         </td>
                     </tr>
                 @endforeach
