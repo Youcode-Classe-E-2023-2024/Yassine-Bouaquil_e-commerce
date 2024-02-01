@@ -15,6 +15,14 @@
             <hr>
             <a href="/ajouter" class="btn btn-primary">Ajouter un produit</a>
             <hr>
+
+            @if(session('status'))
+                <div class="alert alert-success">
+                    {{ (session('status')) }}
+                </div>
+            @endif
+
+
             <table class="table">
                 <thead>
                 <tr>
@@ -33,7 +41,7 @@
                         <td>{{ $products ->prix }}</td>
                         <td>{{ $products ->description }}</td>
                         <td>
-                            <a href="#" class="btn btn-primary">Modifier</a>
+                            <a href="/update-product/{{ $products->id }}" class="btn btn-primary">Modifier</a>
                             <a href="#" class="btn btn-danger">Supprimer</a>
                         </td>
                     </tr>
