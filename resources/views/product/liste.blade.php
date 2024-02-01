@@ -34,20 +34,33 @@
                 </tr>
                 </thead>
                 <tbody>
+
+                @php
+                    $ide = 1;
+                @endphp
+
+
                 @foreach($product as $products)
                     <tr>
-                        <td>{{ $products ->id }}</td>
+                        <td>{{ $ide}}</td>
                         <td>{{ $products->nom }}</td>
                         <td>{{ $products ->prix }}</td>
                         <td>{{ $products ->description }}</td>
                         <td>
+                            <a href="/delete-product/{{ $products->id }}" class="btn btn-danger">Afficher les details</a>
                             <a href="/update-product/{{ $products->id }}" class="btn btn-primary">Modifier</a>
                             <a href="/delete-product/{{ $products->id }}" class="btn btn-danger">Supprimer</a>
                         </td>
                     </tr>
+
+                    @php
+                    $ide += 1;
+                     @endphp
                 @endforeach
                 </tbody>
             </table>
+
+            {{ $product-> links()}}
         </div>
     </div>
 </div>

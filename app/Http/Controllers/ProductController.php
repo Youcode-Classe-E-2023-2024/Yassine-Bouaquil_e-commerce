@@ -9,7 +9,7 @@ class ProductController extends Controller
 {
     public function liste_product()
     {
-        $product = Product::all();
+        $product = Product::paginate(4);
         return view('product.liste',compact('product'));
     }
 
@@ -57,7 +57,8 @@ class ProductController extends Controller
         $product = Product::find($id);
         $product -> delete();
         return redirect()->route('list');
-
-
     }
+
+
+
 }
